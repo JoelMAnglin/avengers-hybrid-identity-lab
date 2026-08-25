@@ -1,0 +1,2 @@
+<mxfile host="app.diagrams.net"><diagram name="OU Structure"><mxGraphModel><root><mxCell id="0"/><mxCell id="1" parent="0"/><mxCell id="2" value="OU=Avengers&#xa;├ Users: Executive, Engineering, Security, Operations, Research, Contractors&#xa;├ Computers: Workstations, Servers&#xa;├ Groups: Security, Distribution&#xa;├ Service Accounts&#xa;├ Privileged Accounts&#xa;└ Disabled Users" style="rounded=1;whiteSpace=wrap;html=1;align=left;" vertex="1" parent="1"><mxGeometry x="80" y="60" width="560" height="220" as="geometry"/></mxCell></root></mxGraphModel></diagram></mxfile>
+

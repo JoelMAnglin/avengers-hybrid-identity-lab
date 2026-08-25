@@ -1,0 +1,8 @@
+Department,UserOU,PrimaryGroup,AdditionalGroups
+Executive,Executive,GG-Executive,GG-VPN-Users
+Engineering,Engineering,GG-Engineering,GG-VPN-Users
+Security,Security,GG-Security,GG-Security-Analysts;GG-VPN-Users
+Operations,Operations,GG-Operations,GG-RemoteDesktop-Users
+Research,Research,GG-Research,GG-VPN-Users
+Contractors,Contractors,GG-Contractors,
+

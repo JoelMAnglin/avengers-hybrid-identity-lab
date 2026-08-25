@@ -1,0 +1,30 @@
+# Secrets and credentials
+secrets.psd1
+.env
+*.secret
+*.key
+*.pfx
+*.p12
+*.pem
+*.cer
+*.crt
+*.der
+*.jks
+*.token
+*.csr
+
+# Generated reports and logs
+logs/
+reports/
+*.log
+*.html
+
+# OS, editors, and PowerShell
+.DS_Store
+Thumbs.db
+.vscode/
+.idea/
+*.clixml
+
+# Container data
+docker/data/

@@ -1,0 +1,17 @@
+Name,Scope,Category,OU,Description
+GG-Executive,Global,Security,Security,Executive role membership
+GG-Engineering,Global,Security,Security,Engineering role membership
+GG-Security,Global,Security,Security,Security role membership
+GG-Operations,Global,Security,Security,Operations role membership
+GG-Research,Global,Security,Security,Research role membership
+GG-Contractors,Global,Security,Security,Contractor role membership
+GG-VPN-Users,Global,Security,Security,Users eligible for lab VPN access
+GG-RemoteDesktop-Users,Global,Security,Security,Users eligible for remote desktop
+GG-Server-Admins,Global,Security,Security,Privileged server administrators
+GG-HelpDesk,Global,Security,Security,Help desk operators
+GG-Security-Analysts,Global,Security,Security,Security analysts
+GG-Password-Reset,Global,Security,Security,Delegated password reset operators
+DL-Engineering-Share-RW,DomainLocal,Security,Security,Engineering share modify permission
+DL-Security-Logs-R,DomainLocal,Security,Security,Security log read permission
+DG-All-Avengers,Universal,Distribution,Distribution,All-user communications
+

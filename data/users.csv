@@ -1,0 +1,18 @@
+FirstName,LastName,Username,Department,Title,OU
+Tony,Stark,tstark,Executive,Chief Technology Officer,Executive
+Steve,Rogers,srogers,Operations,Operations Director,Operations
+Natasha,Romanoff,nromanoff,Security,Security Analyst,Security
+Bruce,Banner,bbanner,Research,Senior Research Engineer,Research
+Thor,Odinson,todinson,Operations,Operations Specialist,Operations
+Clint,Barton,cbarton,Security,Security Analyst,Security
+Peter,Parker,pparker,Engineering,Junior Systems Engineer,Engineering
+Wanda,Maximoff,wmaximoff,Security,Identity Security Analyst,Security
+Sam,Wilson,swilson,Operations,Systems Administrator,Operations
+Bucky,Barnes,bbarnes,Security,Security Engineer,Security
+Shuri,Wakanda,shuri,Engineering,Principal Engineer,Engineering
+Nick,Fury,nfury,Executive,Director,Executive
+Stephen,Strange,sstrange,Research,Research Engineer,Research
+Scott,Lang,slang,Engineering,Support Engineer,Engineering
+Carol,Danvers,cdanvers,Operations,Operations Engineer,Operations
+Miles,Morales,mmorales,Engineering,Junior Systems Engineer,Engineering
+
