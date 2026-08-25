@@ -1,0 +1,7 @@
+// This container cannot read a remote Windows Event Log by itself.
+// Install Alloy on DC01 and adapt the documented windows_events source there.
+// This container configuration only demonstrates a Loki write endpoint.
+loki.write "local" {
+  endpoint { url = "http://loki:3100/loki/api/v1/push" }
+}
+

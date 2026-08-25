@@ -1,0 +1,7 @@
+[CmdletBinding(SupportsShouldProcess)]param([Parameter(Mandatory)][ValidatePattern('^REQ\d{7}$')][string]$RequestId,[Parameter(Mandatory)][string]$FirstName,[Parameter(Mandatory)][string]$LastName,[Parameter(Mandatory)][ValidatePattern('^[a-z][a-z0-9.-]{2,19}$')][string]$Username,[Parameter(Mandatory)][ValidateSet('Executive','Engineering','Security','Operations','Research','Contractors')][string]$Department,[Parameter(Mandatory)][string]$Title,[string]$Manager,[securestring]$InitialPassword)
+Set-StrictMode -Version Latest;$ErrorActionPreference='Stop';Import-Module ActiveDirectory
+if(Get-ADUser -Filter "SamAccountName -eq '$Username'"){throw "$Username already exists"};if(-not$InitialPassword){$InitialPassword=Read-Host 'Temporary password' -AsSecureString}
+$d=Get-ADDomain;$path="OU=$Department,OU=Users,OU=Avengers,$($d.DistinguishedName)";$params=@{Name="$FirstName $LastName";GivenName=$FirstName;Surname=$LastName;SamAccountName=$Username;UserPrincipalName="$Username@$($d.DNSRoot)";Department=$Department;Title=$Title;Path=$path;AccountPassword=$InitialPassword;Enabled=$true;ChangePasswordAtLogon=$true;Description="Created by $RequestId"}
+if($Manager){$params.Manager=(Get-ADUser $Manager).DistinguishedName}
+if($PSCmdlet.ShouldProcess($Username,"Provision joiner for $RequestId")){New-ADUser @params;&(Join-Path $PSScriptRoot '05-Assign-GroupMembership.ps1');Get-ADUser $Username -Properties Department,Title,MemberOf}
+
